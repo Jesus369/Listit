@@ -1,57 +1,30 @@
-# auction-app
+Getting started with the auctioning app!
 
-> 
+Why Feathers?
+* For realtime Sockets.io and REST API’s
+* Easily read and write from a Database (GET and POST)
+* Quickly set up relations within a Database
+* Easily creates authentication (hash passwords and JWT)
 
-## About
 
-This project uses [Feathers](http://feathersjs.com). An open source web framework for building modern real-time applications.
+* Want more information?
+    * https://docs.feathersjs.com/guides/basics/services.html
 
-## Getting Started
+Installing Feathers JS
+* npm install -g feathers-cli
 
-Getting up and running is as easy as 1, 2, 3.
+Settting up our server
+* In command line
+    * feathers generate app
+* Authentication - in command line
+    * feathers generate authentication
+        * Username/Password
+        * Sequelize —> PostgreSQL
+        * DB name - postgres://postgres:@localhost:5432/silent_auction
+    * Create a database in PostgreSQL to match localhost
+        * CREATE DATABASE silent_auction;
+* Create services/tables using Service
+    * feathers generate service
 
-1. Make sure you have [NodeJS](https://nodejs.org/) and [npm](https://www.npmjs.com/) installed.
-2. Install your dependencies
-
-    ```
-    cd path/to/auction-app; npm install
-    ```
-
-3. Start your app
-
-    ```
-    npm start
-    ```
-
-## Testing
-
-Simply run `npm test` and all your tests in the `test/` directory will be run.
-
-## Scaffolding
-
-Feathers has a powerful command line interface. Here are a few things it can do:
-
-```
-$ npm install -g feathers-cli             # Install Feathers CLI
-
-$ feathers generate service               # Generate a new Service
-$ feathers generate hook                  # Generate a new Hook
-$ feathers generate model                 # Generate a new Model
-$ feathers help                           # Show all commands
-```
-
-## Help
-
-For more information on all the things you can do with Feathers visit [docs.feathersjs.com](http://docs.feathersjs.com).
-
-## Changelog
-
-__0.1.0__
-
-- Initial release
-
-## License
-
-Copyright (c) 2016
-
-Licensed under the [MIT license](LICENSE).
+* Setting up hooks
+    * feathers generate hook
