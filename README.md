@@ -1,8 +1,7 @@
-Getting started with the auctioning app!
 
-Why Feathers?
-* For realtime Sockets.io and REST API’s
-* Easily read and write from a Database (GET and POST)
+Why Feathers JS?
+* Real-time API and REST API’s
+* Easily read and write to a Database (GET and POST)
 * Quickly set up relations within a Database
 * Easily creates authentication (hash passwords and JWT)
 
